@@ -1,0 +1,68 @@
+{
+  "name": "hexviewer",
+  "displayName": "HexMap — Hex Viewer",
+  "description": "View Intel HEX, Motorola S-record and binary files with absolute addresses, gap detection and ASCII column.",
+  "version": "0.1.0",
+  "publisher": "mohamedhakeem",
+  "license": "MIT",
+  "icon": "icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mo-Hakeem/hexmap.git"
+  },
+  "homepage": "https://github.com/Mo-Hakeem/hexmap#readme",
+  "bugs": {
+    "url": "https://github.com/Mo-Hakeem/hexmap/issues"
+  },
+  "keywords": [
+    "hex",
+    "hex-viewer",
+    "intel-hex",
+    "srec",
+    "s-record",
+    "motorola",
+    "binary",
+    "embedded",
+    "firmware"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "customEditors": [
+      {
+        "viewType": "hexviewer.hexView",
+        "displayName": "Hex Viewer",
+        "selector": [
+          { "filenamePattern": "*.hex" },
+          { "filenamePattern": "*.ihex" },
+          { "filenamePattern": "*.h68" },
+          { "filenamePattern": "*.mot" },
+          { "filenamePattern": "*.srec" },
+          { "filenamePattern": "*.s19" },
+          { "filenamePattern": "*.s28" },
+          { "filenamePattern": "*.s37" },
+          { "filenamePattern": "*.bin" }
+        ],
+        "priority": "default"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  }
+}
