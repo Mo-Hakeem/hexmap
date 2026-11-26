@@ -44,7 +44,7 @@ Built for firmware engineers working with `.hex`, `.srec`, `.s19`, `.mot` and
 
 ## Usage
 
-1. Install: `Extensions: Install from VSIX...` → select `hexviewer-x.y.z.vsix`
+1. Install: `Extensions: Install from VSIX...` → select `hexmap-x.y.z.vsix`
    (or open the extension folder in the Extension Development Host).
 2. Open a supported file — it opens in the Hex Viewer automatically.
 3. Use the toolbar to filter / hide gaps, click addresses to copy them.
@@ -69,7 +69,7 @@ npm run compile      # tsc -> out/
 Package a `.vsix` (Node ≥ 20 for `vsce`, or use the helper script on Node 18):
 
 ```powershell
-.\make_vsix.ps1      # produces hexviewer-<version>.vsix
+.\make_vsix.ps1      # produces hexmap-<version>.vsix
 ```
 
 ## Publishing
