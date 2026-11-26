@@ -540,9 +540,10 @@ function buildInfo(segsShifted, gapsShifted, shift) {
   const span = DATA.stats.max - DATA.stats.min;
   const util = span > 0 ? ((DATA.stats.bytes / span) * 100).toFixed(1) + '%' : 'n/a';
 
+  const escHtml = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
   let h = '<table style="border-collapse:collapse;">';
   const row = (k, v) => '<tr><td style="color:#808080;padding:1px 12px 1px 0;white-space:nowrap;">' + k + '</td><td style="padding:1px 0;word-break:break-all;">' + v + '</td></tr>';
-  h += row('File', DATA.fileName);
+  h += row('File', escHtml(DATA.fileName));
   h += row('Size', fmtSize(DATA.fileSize));
   h += row('Format', DATA.format);
   h += row('File SHA-256', DATA.sha256);
