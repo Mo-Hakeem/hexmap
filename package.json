@@ -1,9 +1,9 @@
 {
-  "name": "hexviewer",
+  "name": "hexmap-viewer",
   "displayName": "HexMap — Hex Viewer",
   "description": "View Intel HEX, Motorola S-record and binary files with absolute addresses, gap detection and ASCII column.",
   "version": "0.1.0",
-  "publisher": "mohamedhakeem",
+  "publisher": "MohamedHakeem",
   "license": "MIT",
   "icon": "icon.png",
   "repository": {

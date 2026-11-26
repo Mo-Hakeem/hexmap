@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Language="en-US" Id="hexviewer" Version="0.1.0" Publisher="MohamedHakeem" />
+    <Identity Language="en-US" Id="hexmap-viewer" Version="0.1.0" Publisher="MohamedHakeem" />
     <DisplayName>HexMap — Hex Viewer</DisplayName>
     <Description xml:space="preserve">View Intel HEX, Motorola S-record and binary files with absolute addresses, gap detection and ASCII column.</Description>
     <Tags>hex,viewer,srec,intel,motorola,binary,embedded</Tags>
